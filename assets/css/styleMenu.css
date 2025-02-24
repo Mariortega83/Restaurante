@@ -1,0 +1,396 @@
+.title-dishes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 6rem;
+    background-color: white;
+}
+
+.title-dishes h1 {
+    font-family: 'Great Vibes';
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+.platos-especiales {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    
+}
+
+.plato {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    width: 80%;
+
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.plato1 {
+    flex: 1;
+
+    aspect-ratio: 16/9;
+    background-image: url(../photos/plato1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.plato2 {
+    flex: 1;
+    aspect-ratio: 16/9;
+    background-image: url(../photos/palto2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.plato3 {
+    flex: 1;
+    aspect-ratio: 16/9;
+    background-image: url(../photos/plato3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.plato4 {
+    flex: 1;
+    aspect-ratio: 16/9;
+    background-image: url(../photos/plato4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.plato-content {
+    flex: 1;
+    padding: 20px;
+
+}
+
+.plato-content h1 {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.plato-content p {
+    font-family: Montserrat;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+/*-------quoete-------*/
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 3rem;
+
+    background-color: rgba(177, 168, 87, 0.13);
+}
+
+.quote h1 {
+    font-family: 'Great Vibes';
+    font-size: 4.5rem;
+    color: gold;
+    font-weight: 500;
+}
+
+.quote p {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/*-----menus------*/
+
+.menus {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    margin-top: 3rem;
+    gap: 2rem;
+    text-align: center;
+
+}
+
+.menu, .menu2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #fff4e1; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu:hover, .menu2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu h1, .menu2 h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 5.5rem;
+    color: #d36f6f; /* A rich color for titles */
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+
+    margin: 0 auto;
+}
+
+.menu h2, .menu2 h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 1rem 0;
+    text-transform: capitalize;
+}
+
+.menu p, .menu2 p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.menu h2, .menu2 h2 {
+    color: #f79c42; /* Vibrant color for the section headers */
+    border-bottom: 2px solid #f79c42; /* Border under section headers for more distinction */
+    padding-bottom: 0.5rem;
+}
+
+.menu2 {
+    background-color: #f1e3d8; /* Slightly darker for contrast */
+    border: 1px solid #f79c42;
+}
+
+.menu h1, .menu2 h1 {
+    color: #6c4f4f; /* Softer color for heading text */
+}
+
+.menu2 h2, .menu2 p {
+    color: #4a3a3a; /* Darker text for the second menu */
+}
+
+.menu {
+    background-color: #f4f1e3; /* Lighter color for the first menu */
+    border: 1px solid #d36f6f; /* Border color for the first menu */
+}
+
+.menu h2:hover, .menu2 h2:hover {
+    color: #d36f6f; /* Color change on hover */
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+h2:hover {
+    color: #f79c42;
+    cursor: pointer;
+}
+
+
+.informacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row wrap;
+    padding: 2rem;
+    margin-top: 3rem;
+    height: 100vh;
+}
+
+.left-side {
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+    height: 100%;
+    background-image: url("../photos/fotoleft.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+
+    height: 100%;
+    background-image: url("../photos/fotoright.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.middle  {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+    
+
+    rotate: 270deg;
+}
+
+.left-side p, .right-side p {
+    font-family: 'Great Vibes', sans-serif;
+    font-size:4rem;
+    color: white;
+    text-align: center;
+}
+
+.middle  p {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 8rem;
+    color: #555;
+}
+
+.title h1 {
+    font-family: Great Vibes;
+    font-size: clamp(3rem, 8vw, 8rem);
+    font-weight: 200;
+    color: black;
+}
+
+.dorado {
+    color: gold;
+}
+
+.gallery {
+    display: flex;
+    gap: 1rem; /* Espacio entre las imágenes */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.gallery div {
+    width: 200px; /* Tamaño de cada imagen */
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 8px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.gallery div:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Específicos para cada imagen */
+.gallery1 { background-image: url("../photos/plato1.jpg"); }
+.gallery2 { background-image: url("../photos/palto2.jpg"); }
+.gallery3 { background-image: url("../photos/plato3.jpg"); }
+.gallery4 { background-image: url("../photos/plato4.jpg"); }
+
+.gallery div::before {
+    content: attr(data-name);
+    background-color: rgba(255, 255, 255, 0.13);
+    display: block;
+    text-align: center      ;
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: gold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+@media (max-width: 1280px) {
+
+    .informacion {
+       height: 40%;
+    }
+    .middle {
+        rotate: 0deg;
+    }
+
+    .middle p {
+        font-size: 5rem;
+        color: black;
+    }
+}
+@media (max-width: 1450px) {
+    .plato {
+        flex-flow: column wrap;
+    }
+
+    .plato1,
+    .plato2,
+    .plato3,
+    .plato4 {
+        width: 100%;
+    }
+
+    .plato-content {
+        width: 100%;
+    }
+
+    .menus {
+
+        display: block;
+    }
+
+    .menu,
+    .menu2 {
+        width: 100%;
+    }
+
+    .menu {
+        margin-bottom: 2rem;
+    }
+
+}
+
+

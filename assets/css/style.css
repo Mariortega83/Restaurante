@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,9 +14,13 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     font-family: Montserrat;
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 1.1vw, 1.1rem);
     line-height: 1.8rem;
 }
 
@@ -40,7 +46,6 @@ p {
     }
 }
 
-
 /* ------------------------ HEADER ------------------------ */
 
 header {
@@ -53,7 +58,6 @@ header {
     height: auto;
 
     z-index: 99;
-
 
     backdrop-filter: blur(8px);
 
@@ -69,9 +73,7 @@ header {
         left: 1%;
         top: 1rem;
     }
-
 }
-
 
 nav {
     display: flex;
@@ -79,7 +81,6 @@ nav {
     align-items: center;
 
     padding: 1rem;
-
 }
 
 .izq {
@@ -87,28 +88,35 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-}
-
-.nombre {
-    font-family: Montserrat;
 }
 
 .logo {
     flex: 1;
-    background-image: url(/assets/photos/esencia.png);
+
+    background-image: url('../photos/esencia.png');
     background-size: contain;
-    background-position: left center;
+    background-position: start center;
     background-repeat: no-repeat;
-    height: 40px;
+    height: 60px;
     filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .5));
 }
 
+.nombre {
+    flex: 5;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-family: Great Vibes;
+    font-size: clamp(2rem, 2vw, 2rem);
+    margin-top: 15px;
+}
 
+.nombre h1 {
+    font-weight: 400;
+    color: black;
+}
 
 .main-nav {
     flex: 6;
-    
 }
 
 .menu-on-nav {
@@ -124,12 +132,12 @@ nav {
     text-decoration: none;
     font-family: Montserrat, sans-serif;
     font-weight: 300;
+    font-size: clamp(1rem, 1.1vw, 1.1rem);
 
     animation: white-to-black linear forwards;
     animation-timeline: view();
     animation-range-start: 100vh;
     animation-range-end: 200vh;
-
 }
 
 @keyframes white-to-black {
@@ -140,6 +148,31 @@ nav {
 
 .nav-bar {
     display: none;
+}
+
+.book-btn a {
+    display: inline-block;
+    background-color: gold;
+    color: white !important;
+    /* Color del texto */
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: clamp(1rem, 1.6vw, 1.6rem);
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-btn a:hover {
+    transform: translateY(-3px);
+}
+
+.book-btn a:active {
+    background-color: goldenrod;
+    /* Color cuando se hace clic */
+    transform: translateY(1px);
+    /* Efecto al hacer clic */
 }
 
 /* ------------------------ MAIN ------------------------ */
@@ -154,12 +187,11 @@ main {
     width: 100%;
 
     height: 100vh;
-    background-image: url(/assets/photos/hero.jpg);
+    background-image: url(../photos/hero.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 
 .hero-content {
@@ -168,106 +200,311 @@ main {
     left: 10%;
 }
 
+.botoneshero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.boton2 {
+    background-color: rgba(0, 0, 0, 0.082);
+    color: black;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: clamp(1rem, 1.1vw, 1.1rem);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.boton2:hover {
+    background-color: rgba(0, 0, 0, 0.411);
+    color: rgb(255, 255, 255);
+}
+
+.mainboton {
+    background-color: rgb(121, 50, 128);
+    color: gold;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: clamp(1rem, 1.1vw, 1.1rem);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.mainboton:hover {
+    background-color: gold;
+    color: rgb(121, 50, 128);
+}
+
 .hero-content h1 {
     font-family: Great Vibes;
-    font-size: 6rem;
-    color: white;
-    text-shadow: 1px 1px 2px black;
+    font-size: clamp(6rem, 10vw, 10rem);
+    font-weight: 500;
+    color: rgb(218, 185, 3);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.027);
 }
 
 .hero-content p {
     font-family: Montserrat;
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     color: black;
-    text-shadow: 1px 1px 2px black;
 }
+
 /*---------------ABOUT----------------*/
 
 .about {
-    height: 100vh;
     width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
 
-    background-image: url(/assets/photos/415.jpg);
+.content-photos {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    flex-shrink: 0;
+}
+
+.about-photo,
+.about-photo2 {
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
+    position: absolute;
 }
 
 .about-photo {
-    flex: 1;
-    aspect-ratio: 16/9;
-    background-image: url(/assets/photos/about.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(../photos/fondoeleggante.jpg);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
-
-    background-color: black;
+.about-photo2 {
+    background-image: url(../photos/about.jpg);
+    top: 50px;
+    left: 50px;
+    z-index: 2;
 }
 
 .about-content {
     flex: 1;
+    max-width: 70ch;
     padding: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.about-content h1 {
+    font-family: Great Vibes;
+    font-size: clamp(4.5rem, 4.5vw, 4.5rem);
+    color: rgb(218, 185, 3);
+    font-weight: 500;
 }
 
 /*-------------ROOMS----------*/
 .title {
     font-family: Great Vibes;
-    font-size: 3rem;
+    font-size: clamp(3rem, 3vw, 6rem);
     padding: 3rem;
     color: white;
-    text-shadow: 1px 1px 2px black
-    ;
-
-
+    text-shadow: 1px 1px 2px black;
 }
 
 .dorado {
     color: gold;
 }
-.rooms {
-    background-color: whitesmoke;
-}
 
 .tarjetas {
-    
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column nowrap;
+    justify-content: center;
     align-items: center;
     padding: 2rem;
     gap: 2rem;
 }
 
+.room {
+    flex: 1;
+    background-color: white;
+
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.068) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 2rem;
+}
+
 .room1ph {
     flex: 1;
-    aspect-ratio: 16/9;
-
-    background-image: url(/assets/photos/sala1.jpg);
+    aspect-ratio: 16 / 9;
+    background-image: url(../photos/sala1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.room {
+.room2ph {
     flex: 1;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    align-items: center;
-    padding: 2rem;
+    aspect-ratio: 16 / 9;
+    background-image: url(../photos/sala2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.room3ph {
+    flex: 1;
+    aspect-ratio: 16 / 9;
+    background-image: url(../photos/sala3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.room1content {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+.room1content h1 {
+    font-family: Great Vibes;
+    font-size: clamp(2rem, 2vw, 4rem);
+    color: rgb(218, 185, 3);
+    font-weight: 500;
+}
+
+.especs {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.especs p {
+    font-family: Montserrat;
+    font-size: .8rem
+}
+
+.btn-room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
+
+.btn-room a {
+    color: black;
+    background-color: rgba(128, 128, 128, 0.404);
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: clamp(1rem, 1.1vw, 1.1rem);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+    
+    text-decoration: none;
+}
+
+.boton-room1:hover {
+    background-color: rgba(255, 0, 0, 0.411);
+    color: rgb(255, 255, 255);
+}
+
+.boton-room2:hover {
+    background-color: rgba(102, 69, 37, 0.411);
+    color: rgb(255, 255, 255);
+}
+
+.boton-room3:hover {
+    background-color: rgba(78, 155, 132, 0.411);
+    color: rgb(255, 255, 255);
+}
+
+
+/*---------------------REWARDS-------------------------*/
+
+.rewards {
+   
+}
+
+.awards {
+     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.reward {
+    flex: 1;
+    text-align: center;
+    border-left: 1px solid black;
+}
+
+.reward:nth-child(1) {
+    border-left: none;
+}
+
+.reward-1photo {
+    aspect-ratio: 16/9;
+    background-image: url("../photos/estrella-michelin.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reward-2photo {
+    aspect-ratio: 16/9;
+    background-image: url("../photos/sol.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reward-3photo {
+    aspect-ratio: 16/9;
+    background-image: url("../photos/sol2.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reward-content {
+    color: black;
+    font-family: Montserrat;
+    font-size: clamp(1rem, 1.1vw, 1.1rem);
+}
+
+.reward-content h2 {
+    color: rgb(218, 185, 3);
+    font-weight: 500;
+    font-size: clamp(1.5rem, 1.5vw, 1.5rem);
+}
 
 /*-------GALLERY-----*/
 
@@ -280,8 +517,6 @@ main {
     columns: 3 300px;
 }
 
-
-
 .gallery img {
     display: block;
     margin-bottom: 1rem;
@@ -291,6 +526,61 @@ main {
 }
 
 /*----------------THE OWNER----------------*/
+
+.owner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.owner-content {
+    flex: 1 1 50%;
+    padding: 8rem;
+}
+
+.owner-photo {
+    flex: 1 1 50%;
+    aspect-ratio: 9/10;
+
+    background-image: url(../photos/martin.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.owner-photo h2 {
+    font-family: Montserrat;
+    font-size: clamp(3rem, 3vw, 3rem);
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px black;
+
+    margin-bottom: 3rem;
+}
+
+.gold {
+    font-family: Great Vibes;
+    font-size: clamp(3rem, 3vw, 3rem);
+    color: rgb(218, 185, 3);
+    font-weight: 500;
+}
+
+.owner-content h1 {
+    font-family: Great Vibes;
+    font-size: clamp(4.5rem, 4.5vw, 4.5rem);
+    color: rgb(218, 185, 3);
+    font-weight: 500;
+}
+
+.owner-photo h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
 
 /*----------------FOOTER---------------*/
 
@@ -304,15 +594,36 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .left {
     padding: 1.5rem;
 }
 
-.center{
-    background-image: url(/assets/photos/esencia.png);
+.left li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.left li a {
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat;
+    font-size: clamp(1.1rem, 1.1vw, 1.1rem);
+}
+
+.left li a:hover {
+    color: gold;
+}
+
+.left h2 {
+    font-family: Montserrat;
+    font-size: clamp(2rem, 2vw, 2rem);
+    margin-bottom: 1rem;
+}
+
+.center {
+    background-image: url(../photos/esencia.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -323,5 +634,178 @@ footer {
 
 .right p {
     padding: 1.5rem;
+    font-size: clamp(1rem, 1.1vw, 1.1rem);
 }
 
+.right p:hover {
+    cursor: pointer;
+}
+
+.see-more {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.see-more a {
+    color: black;
+    font-family: Montserrat;
+    font-size: clamp(1rem, 1.1vw, 1.1rem);
+    border: 1px solid gold;
+    padding: .5rem 1rem;
+    
+    text-decoration: none;
+}
+
+.see-more a:hover {
+    background-color: gold;
+}
+
+@media (max-width: 1360px) {
+    .tarjetas {
+        display: block;
+        
+    }
+
+    .romm:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .room {
+        margin: 0 auto;
+        margin-top: 2rem; ;
+        width: 100%;
+    }
+
+    .especs {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .reward {
+        border-left: none;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .logo {
+        display: none;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .content-photos {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        flex-shrink: 0;
+    }
+
+    .awards {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem;
+        gap: 2rem;
+
+    }
+
+    
+
+    .owner-photo {
+        background-image: url("../photos/martin2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        aspect-ratio: 16/9;
+    }
+
+    .owner {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .owner-content {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about p {
+        font-size: clamp(1rem, 1vw, 1rem);
+    }
+
+    .tarjetas {
+        flex-direction: column;
+       width: 100%;
+    }
+
+    .room {
+        margin-bottom: 2rem;
+    }
+
+    .room1content p {
+        font-size: clamp(1rem, 1vw, 1rem);
+    }
+
+    .owner-photo {
+        aspect-ratio: 16/9;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .menu-on {
+        display: none;
+    }
+
+    .nav-bar {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: block;
+        width: 100%;
+        height: 90vh;
+        background-color: rgba(0, 0, 0, .9);
+        position: fixed;
+        left: 0;
+        top: 4.6rem;
+
+        animation: fade-in-mobile .3s ease-in;
+    }
+
+    @keyframes fade-in-mobile {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .menu-mobile .menu-on-nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu-mobile .menu-on-nav li a {
+        font-size: clamp(2.5rem, 2.5vw, 2.5rem);
+        animation: none;
+    }
+}

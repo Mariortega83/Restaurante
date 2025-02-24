@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 7rem;
+
+    height: 40%;
+
+    margin-bottom:4rem ;
+}
+
+
+.team h1 {
+    font-family: 'Great Vibes';
+    font-size: 6rem;
+    font-weight: 400;
+}
+.mainchef {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+
+.photo-chef {
+    width: 50%;
+    aspect-ratio: 16/ 9 ;
+    background-image: url(../photos/martin2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.chef-content {
+    padding: 2rem;
+width: 52%;
+}
+
+.chef-content h1, .crew-content h1, .techniques h1 {
+    font-family: 'Great Vibes';
+    font-size: 4.5rem;
+    color: rgb(218, 185, 3);
+    
+
+    font-weight: 500;
+    
+}
+
+.chefs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/*------SUBCHEFS-----*/
+
+.chef {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row wrap;
+    padding: 2rem;
+}
+.line {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border: 1px solid black;
+    transform: rotate(90deg);
+
+}
+
+.photo1 {
+    width: 100%;
+    aspect-ratio: 9/16 ;
+    background-image: url(../photos/maca.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    
+}
+
+.photo2 {
+    
+    width: 100%;
+    aspect-ratio: 9/16 ;
+    background-image: url(../photos/gordo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 2rem;
+    
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row wrap;
+    padding: 2rem;
+    margin-top: 3rem;
+
+    
+}
+
+.redes img {
+    width: 50px;
+    height: 50px;
+    margin: 0 1rem;
+}
+
+.redes img:hover {
+    cursor: pointer;
+}
+/*-------quoete-------*/
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 3rem;
+
+    background-color: black;
+}
+
+.quote h1 {
+    font-family: 'Great Vibes';
+    font-size: 4.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+.quote p {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*-------crew-------*/
+
+.crew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.crew-photo {
+
+    width: 70%;
+    aspect-ratio: 16/ 9 ;
+    background-image: url(../photos/crew.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.crew-content {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 2rem;
+width: 53%;
+}
+
+.techniques {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.tech-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+    width: 70%;
+}
+
+.tech {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    
+}
+
+.tech:nth-child(1) {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    
+}
+
+.tech:nth-child(3) {
+    
+    border-right: 1px solid black;
+    
+}
+
+.tech:nth-child(2) {
+    border-bottom: 1px solid black;
+    
+}
+
+.tech:nth-child(odd) {
+ text-align: right;   
+}
+
+.tech:nth-child(even) {
+    text-align: left;
+}
+
+.tech h2 {
+    font-family: 'Great Vibes';
+    font-size: 2.5rem;
+    color: rgb(218, 185, 3);
+    font-weight: 500;
+}
+
+@media (max-width: 1450px){
+
+    .mainchef {
+        flex-direction: column;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .photo-chef {
+        width: 100%;
+    }
+    .crew-photo {
+        width: 100%;
+    }
+    .line {
+        display: none;
+    }
+
+    .chef {
+        flex-direction: column;
+
+    }
+
+
+    .photo1, .photo2 {
+        width: 50%;
+        margin: 0 auto;
+        
+
+    }
+
+    .chef-content {
+        width: 100%;
+    }
+    .crew-content {
+        width: 100%;
+    }
+
+    .chef-content p {
+        font-size: 1rem;
+    }
+
+
+    
+}
+
+@media (max-width: 1000px){
+
+    .mainchef {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }}

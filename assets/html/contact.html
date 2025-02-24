@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essence</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/collapse.css">
+    <link rel="stylesheet" href="../css/styleContact.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="izq">
+                <div class="logo"></div>
+                <div class="nombre">
+                    <h1>Essence</h1>
+                </div>
+            </div>
+            <div class="main-nav">
+                <div class="collapse">
+                    <div class="nav-bar">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="menu-on">
+                    <ul class="menu-on-nav">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="book-btn"><a href="contact.html#booking">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="progress"></div>
+    </header>
+    <section class="contact" id="contact">
+        <div class="contact-container">
+
+            <div class="contact-header">
+                <div class="section-name">
+                    <h1>Don't miss the oportunity</h1>
+                </div>
+
+            </div>
+            <div class="contact-body">
+                <div class="line"><span>Essence</span><span> 987 87 87 90</span><span>essence@ex.com</span>
+                </div>
+                <div class="line"><span>C/ Fontiveros 34</span><span> 500 87 87 90</span><span>info@ex.com</span></div>
+                <form class="mt50">
+                    <input type="text" name="name" placeholder="name">
+                    <input type="text" name="email" placeholder="email">
+                    <input type="text" name="subject" placeholder="subject">
+
+                    <div class="messagetext">
+                        <span>Message</span>
+                        <textarea placeholder="message">
+                        </textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="booking">
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="section-name" >
+        <h1>Book Now</h1>
+    </div>
+
+    <section class="booking">
+        <h1>Book Your Experience</h1>
+        <p>Reserve your table to enjoy an unforgettable dining experience.</p>
+
+        <form class="booking-form">
+
+            <label for="date">Select a Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select a Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="menu">Choose a Menu:</label>
+            <select id="menu" name="menu" required>
+                <option value="classic">The Classic</option>
+                <option value="gourmet">Gourmet Experience</option>
+            </select>
+
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" min="1" max="10" required>
+
+            <button type="submit">Reserve Now</button>
+        </form>
+    </section>
+
+    <section class="contact-map">
+        <h2>Find Us Here</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6359.234628410208!2d-3.594351223472091!3d37.16179804723186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fca8a6a23e09%3A0xbd2353be22dec616!2sC.%20Primavera%2C%2026%2C%20Genil%2C%2018008%20Granada!5e0!3m2!1sen!2ses!4v1731968155185!5m2!1sen!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <ul class="left">
+            <h2>Quick Nav</h2>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="center"></div>
+        <div class="right">
+            <p>© 2024 Essence</p>
+            <p>Legal Warning</p>
+            <p>Privacy Policy</p>
+            <p>Cookies</p>
+        </div>
+    </footer>
+    <script src="../js/collapse.js"></script>
+
+</body>
+
+</html>

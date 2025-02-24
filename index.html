@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/collapse.css">
 </head>
 
 <body>
@@ -13,7 +14,9 @@
         <nav>
             <div class="izq">
                 <div class="logo"></div>
-                <div class="nombre">Essence</div>
+                <div class="nombre">
+                    <h1>Essence</h1>
+                </div>
             </div>
             <div class="main-nav">
                 <div class="collapse">
@@ -23,10 +26,12 @@
                 </div>
                 <div class="menu-on">
                     <ul class="menu-on-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./assets/html/team.html">Team</a></li>
+                        <li><a href="./assets/html/menu.html">Menu</a></li>
+                        <li><a href="./assets/html/contact.html">Contact</a></li>
+                        <li class="book-btn"><a href="./assets/html/contact.html#booking">Book Now</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -37,28 +42,52 @@
     <main>
         <div class="hero-section">
             <div class="hero-content">
-                <h1>Delicious Food</h1>
+                <h1>Essence</h1>
                 <p>Our food is made with love and passion</p>
+                <div class="botoneshero">
+                    <button class="boton2" onclick="window.location.href='./assets/html/menu.html'">View Menu</button>
+                    <button class="mainboton" onclick="window.location.href='./assets/html/contact.html#booking'">Book
+                        Now</button>
+                </div>
 
             </div>
         </div>
     </main>
 
     <section class="about">
-        <div class="about-photo"></div>
-        <div class="about-content">
-            <h1>Esencia</h1>
-            <p>Esencia is a culinary haven where tradition meets innovation. Founded by [Name], a visionary chef with a
-                passion for blending global flavors, the restaurant invites guests on a journey through unique, artfully
-                crafted dishes. The menu changes seasonally, highlighting the freshest ingredients and the creative
-                spirit behind each plate. With an ambiance that fuses modern elegance and warm hospitality, Esencia
-                promises an unforgettable dining experience that celebrates the soul of fine dining.
+        <div class="content-photos">
+            <div class="about-photo"></div>
+            <div class="about-photo2"></div>
+        </div>
 
-            <p>At Esencia, every detail is thoughtfully curated—from the subtle notes of decor that evoke both comfort
-                and sophistication, to the impeccable service that ensures each guest feels at home. Our commitment to
-                sustainability and local sourcing further enriches the story of each dish, making every visit not just a
-                meal, but an exploration of taste and culture.</p>
+
+        <div class="about-content">
+            <h1>Essence</h1>
+            <p><strong>Essence</strong> is a culinary haven where <strong>tradition</strong> meets
+                <strong>innovation</strong>.
+                Founded by <strong>Martin Berasategi</strong>, a visionary chef with a passion for blending
+                <strong>global flavors</strong>,
+                the restaurant invites guests on a journey through unique, artfully crafted dishes. The menu changes
+                <strong>seasonally</strong>,
+                highlighting the <strong>freshest ingredients</strong> and the creative spirit behind each plate. With
+                an ambiance
+                that fuses <strong>modern elegance</strong> and <strong>warm hospitality</strong>,
+                <strong>Essence</strong> promises an
+                unforgettable dining experience.
             </p>
+
+            <p>At <strong>Essence</strong>, every detail is thoughtfully curated—from the subtle notes of decor that
+                evoke both
+                <strong>comfort</strong> and <strong>sophistication</strong>, to the impeccable service that ensures
+                each guest feels at home.
+                Our commitment to <strong>sustainability</strong> and <strong>local sourcing</strong> further enriches
+                the story of each dish,
+                making every visit not just a meal, but an exploration of <strong>taste</strong> and
+                <strong>culture</strong>.
+            </p>
+
+
+
         </div>
     </section>
 
@@ -70,80 +99,200 @@
             <div class="room">
                 <div class="room1ph"></div>
                 <div class="room1content">
-                    <h1>Our Story</h1>
-                    <p>Esencia is a culinary haven where tradition meets innovation. Founded by [Name], a visionary chef
-                        with a passion for blending global flavors, the restaurant invites guests on a journey through
-                        unique, artfully crafted dishes. The menu changes seasonally, highlighting the freshest
-                        ingredients
-                        and the creative spirit behind each plate. With an ambiance that fuses modern elegance and warm
-                        hospitality, Esencia promises an unforgettable dining experience that celebrates the soul of
-                        fine
-                        dining.</p>
-
+                    <h1><strong>The Amber Chamber</strong></h1>
+                    <p>A dining room designed to exude <strong>timeless elegance</strong>, The Amber Chamber features
+                        <strong>warm golden hues</strong>,
+                        <strong>luxurious chandeliers</strong>, and a <strong>serene atmosphere</strong> that
+                        complements its <strong>culinary artistry</strong>.
+                        Known for <strong>impeccable service</strong> and a menu that highlights <strong>seasonal
+                            ingredients</strong>,
+                        this room provides an <strong>intimate setting</strong> for a gastronomic journey where every
+                        dish is a <strong>masterpiece</strong>.
+                    </p>
+                    <div class="especs">
+                        <p><strong>Capacity:</strong> 20 guests</p>
+                        <p><strong>Specialty:</strong> Seasonal tasting menu</p>
+                        <p><strong>Ambiance:</strong> Elegant and intimate</p>
+                    </div>
+                    <div class="btn-room">
+                        <a href="./assets/html/contact.html#booking" class="boton-room1" >Book Now</a>
+                    </div>
                 </div>
             </div>
+
             <div class="room">
-                <div class="room1ph"></div>
+                <div class="room2ph"></div>
                 <div class="room1content">
-                    <h1>Our Story</h1>
-                    <p>Esencia is a culinary haven where tradition meets innovation. Founded by [Name], a visionary chef
-                        with a passion for blending global flavors, the restaurant invites guests on a journey through
-                        unique, artfully crafted dishes. The menu changes seasonally, highlighting the freshest
-                        ingredients
-                        and the creative spirit behind each plate. With an ambiance that fuses modern elegance and warm
-                        hospitality, Esencia promises an unforgettable dining experience that celebrates the soul of
-                        fine
-                        dining.</p>
-
+                    <h1><strong>Crystal Horizon</strong></h1>
+                    <p>With <strong>panoramic floor-to-ceiling windows</strong>, Crystal Horizon offers
+                        <strong>breathtaking views</strong> of the city
+                        skyline or surrounding natural landscapes, making it a feast for both the palate and the eyes.
+                        The <strong>minimalist décor</strong> emphasizes <strong>transparency and light</strong>,
+                        creating a <strong>serene ambiance</strong>
+                        where diners can focus on the <strong>intricate, artfully plated dishes</strong> that celebrate
+                        <strong>modern techniques</strong> and <strong>bold flavors</strong>.
+                    </p>
+                    <div class="especs">
+                        <p><strong>Capacity:</strong> 30 guests</p>
+                        <p><strong>Specialty:</strong> Contemporary fusion cuisine</p>
+                        <p><strong>Ambiance:</strong> Modern and scenic</p>
+                    </div>
+                    <div class="btn-room">
+                        <a href="./assets/html/contact.html#booking" class="boton-room2" >Book Now</a>
+                    </div>
                 </div>
             </div>
+
             <div class="room">
-                <div class="room1ph"></div>
+                <div class="room3ph"></div>
                 <div class="room1content">
-                    <h1>Our Story</h1>
-                    <p>Esencia is a culinary haven where tradition meets innovation. Founded by [Name], a visionary chef
-                        with a passion for blending global flavors, the restaurant invites guests on a journey through
-                        unique, artfully crafted dishes. The menu changes seasonally, highlighting the freshest
-                        ingredients
-                        and the creative spirit behind each plate. With an ambiance that fuses modern elegance and warm
-                        hospitality, Esencia promises an unforgettable dining experience that celebrates the soul of
-                        fine
-                        dining.</p>
-
+                    <h1><strong>Celeste Atelier</strong></h1>
+                    <p>A <strong>creative haven</strong> for <strong>culinary artistry</strong>, Celeste Atelier
+                        combines <strong>avant-garde design</strong> with an
+                        <strong>immersive dining experience</strong>. Featuring an <strong>open kitchen concept</strong>
+                        surrounded by sophisticated decor
+                        in <strong>deep blues and whites</strong>, the space reflects <strong>innovation</strong> and
+                        <strong>refinement</strong>.
+                        The <strong>tasting menus</strong> showcase unique combinations of <strong>global
+                            influences</strong>, elevated by the use of <strong>molecular gastronomy</strong>.
+                    </p>
+                    <div class="especs">
+                        <p><strong>Capacity:</strong> 15 guests</p>
+                        <p><strong>Specialty:</strong> Molecular gastronomy tasting menu</p>
+                        <p><strong>Ambiance:</strong> Experimental and artistic</p>
+                    </div>
+                    <div class="btn-room">
+                        <a href="./assets/html/contact.html#booking" class="boton-room3" >Book Now</a>
+                    </div>
                 </div>
             </div>
+
 
         </div>
     </section>
 
-    <section class="gallery">
-        <img src="/assets/photos/galeria/foto5.jpg" width="300px" alt="">
-        <img src="/assets/photos/galeria/foto1.png" width="300px" alt="">
-        <img src="/assets/photos/galeria/foto2.png" width="300px" alt="">
-        <img src="/assets/photos/galeria/foto3.jpg" width="300px" alt="">
-        <img src="/assets/photos/galeria/foto4.jpg" width="300px" alt="">
-        <img src="/assets/photos/galeria/foto6.jpg" width="300px" alt="">
+    <section class="rewards">
+        <div class="title">
+            <h1><span class="dorado">Our</span> Awards</h1>
+        </div>
+        <div class="awards">
+            <div class="reward">
+                <div class="reward-1photo"></div>
+                <div class="reward-content">
+                    <h2>Estrella Michelin 2018</h2>
+                </div>
+            </div>
+
+            <div class="reward">
+                <div class="reward-1photo"></div>
+                <div class="reward-content">
+                    <h2>Estrella Michelin 2019</h2>
+                </div>
+            </div>
+
+            <div class="reward">
+                <div class="reward-1photo"></div>
+                <div class="reward-content">
+                    <h2>Estrella Michelin 2020</h2>
+                </div>
+            </div>
+
+            <div class="reward">
+                <div class="reward-1photo"></div>
+                <div class="reward-content">
+                    <h2>Estrella Michelin 2021</h2>
+                </div>
+            </div>
+
+
+            <div class="reward">
+                <div class="reward-1photo"></div>
+                <div class="reward-content">
+                    <h2>Estrella Michelin 2022</h2>
+                </div>
+            </div>
+
+
+            <div class="reward">
+                <div class="reward-2photo"></div>
+                <div class="reward-content">
+                    <h2>Sol Repsol</h2>
+                </div>
+            </div>
+
+            <div class="reward">
+                <div class="reward-3photo"></div>
+                <div class="reward-content">
+                    <h2>2º Sol Repsol</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="title">
+            <h1><span class="dorado">Some</span> Views</h1>
+        </div>
+        <div class="gallery">
+        <img src="./assets/photos/galeria/foto5.jpg" width="300px" alt="">
+        <img src="./assets/photos/galeria/foto1.png" width="300px" alt="">
+        <img src="./assets/photos/galeria/foto2.png" width="300px" alt="">
+        <img src="./assets/photos/galeria/foto3.jpg" width="300px" alt="">
+        <img src="./assets/photos/galeria/plato10.jpg" width="300px" alt="">
+        <img src="./assets/photos/galeria/foto4.jpg" width="300px" alt="">
+        <img src="./assets/photos/galeria/foto6.jpg" width="300px" alt="">
+        <img src="./assets/photos/galeria/plato11.jpg" width="300px" alt="">
+</div>
     </section>
 
     <section class="owner">
-        <div class="owner-photo"></div>
-        <div class="owner-content"></div>
+        <div class="owner-content">
+            <h1>Martin Berasategi</h1>
+            <p><strong>Essence</strong> was founded by <strong>Martin Berasategui</strong> with the vision of creating a
+                space where tradition meets innovation.
+                After years of traveling and studying culinary arts in various countries,
+                <strong>John</strong> felt inspired to blend the techniques and flavors he had encountered into a unique
+                dining experience.
+                Starting with a <strong>small, intimate venue</strong>, Essence initially gained recognition for its
+                <strong>bold approach</strong> to reimagining classic dishes while honoring their roots.
+            </p>
+
+            <p>The restaurant’s philosophy—capturing the <strong>"essence"</strong> of each ingredient—quickly resonated
+                with <strong>diners and critics</strong> alike.
+                Through meticulous attention to <strong>sourcing the finest seasonal ingredients</strong> and crafting
+                <strong>visually stunning plates</strong>,
+                <strong>Martin</strong> and his team built a reputation for <strong>excellence</strong>.
+                Within a few years, <strong>Essence earned its first Michelin star</strong>, solidifying its place as a
+                <strong>culinary landmark</strong>.
+            </p>
+
+            <div class="see-more">
+                <a href="./assets/html/team.html">See More</a>
+            </div>
+
+
+        </div>
+        <div class="owner-photo">
+            <h2>"THE <span class="gold">GREATNESS</span> OF COKING"</h2>
+        </div>
     </section>
     <footer>
-        <div class="left">
-            <p>© 2024 Esencia</p>
-            <p>Legal Warning</p>
-            <p>Privacy Policy</p>
-            <p>Cookies</p>
-        </div>
+        <ul class="left">
+            <h2>Quick Nav</h2>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./assets/html/team.html">Team</a></li>
+            <li><a href="./assets/html/menu.html">Menu</a></li>
+            <li><a href="./assets/html/contact.html">Contact</a></li>
+        </ul>
         <div class="center"></div>
         <div class="right">
-            <p>© 2024 Esencia</p>
+            <p>© 2024 Essence</p>
             <p>Legal Warning</p>
             <p>Privacy Policy</p>
             <p>Cookies</p>
         </div>
     </footer>
+    <script src="./assets/js/collapse.js"></script>
 </body>
 
 </html>

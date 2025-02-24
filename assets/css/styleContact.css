@@ -1,0 +1,236 @@
+.contact{
+    height: 100vh;
+    width: 100%;
+
+    margin-top: 4rem ;
+
+    font-family: Montserrat;
+    
+
+}
+.section-name {
+    font-family: 'Great Vibes';
+    font-size: clamp(3rem, 5vw, 6rem);
+    
+    color: black;
+    text-align: center;
+}
+
+.section-name h1 {
+    font-weight: 400;
+}
+
+.contact-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-header {
+    width: 100%;
+    flex: 2;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.contact-body {
+    flex: 5;
+    width: 100%;
+    padding: 0 clamp(0.5rem, -11rem + 38.333vw, 35rem);
+
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+.line {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.line * {
+    flex: 1;
+    
+}
+
+.line span:nth-child(2) {
+    text-align: center;
+}
+
+.line span:nth-child(3) {
+    text-align: right;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+input[type=text] {
+    border: 0;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-family: NouvelRegular;
+    font-size: 1.1rem;
+    padding: .5rem;
+}
+
+input[type=text]:focus, textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #f0a500;
+    
+}
+
+textarea {
+    width: 100%;
+    margin-top: .5rem;
+    height: 100px;
+    font-family: NouvelRegular;
+    font-size: 1.1rem;
+    resize: none;
+}
+
+.messagetext span {
+    font-size: 1.1rem;
+    color: #807e7e;
+}
+
+input[type=submit] {
+    border: 0;
+    background-color: #f0a500;
+    color: white;
+    padding: .5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    border: 1px solid black;
+}
+
+/*booking*/
+
+
+/* Booking Section Styling */
+.booking {
+    background-color: #f8f9fa;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-align: center;
+    max-width: 600px;
+    margin: 3rem auto;
+}
+
+.booking h1 {
+    font-size: 2.5rem;
+    color: rgb(218, 185, 3);
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', serif;
+}
+
+.booking p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.booking-form label {
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form button {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    border-color: #f0a500;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.booking-form button {
+
+    background-color: #f0a500;
+    color: #fff;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+    background-color: #0056b3;
+}
+
+.booking-form input[type="date"],
+.booking-form input[type="time"],
+.booking-form select {
+    text-align: center;
+}
+
+.contact-map {
+    padding: 2rem 0;
+    text-align: center;
+
+}
+
+.contact-map h2 {
+    font-family: 'Great Vibes';
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Set the desired height */
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

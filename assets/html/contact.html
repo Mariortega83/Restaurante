@@ -71,33 +71,37 @@
 
     </section>
 
-    <div class="section-name" >
+    <div class="section-name">
         <h1>Book Now</h1>
     </div>
+    <section class="booking-2">
+        <div class="book-photo"></div>
+        <div class="book-content">
 
-    <section class="booking">
-        <h1>Book Your Experience</h1>
-        <p>Reserve your table to enjoy an unforgettable dining experience.</p>
+            <h2>Take Advantage</h2>
+            <p>Book your table now and enjoy a unique dining experience at Essence.</p>
+            
+            <div class="div_form"><form class="booking-form">
 
-        <form class="booking-form">
+                <label for="date">Select a Date:</label>
+                <input type="date" id="date" name="date" required>
 
-            <label for="date">Select a Date:</label>
-            <input type="date" id="date" name="date" required>
+                <label for="time">Select a Time:</label>
+                <input type="time" id="time" name="time" required>
 
-            <label for="time">Select a Time:</label>
-            <input type="time" id="time" name="time" required>
+                <label for="menu">Choose a Menu:</label>
+                <select id="menu" name="menu" required>
+                    <option value="classic">The Classic</option>
+                    <option value="gourmet">Gourmet Experience</option>
+                </select>
 
-            <label for="menu">Choose a Menu:</label>
-            <select id="menu" name="menu" required>
-                <option value="classic">The Classic</option>
-                <option value="gourmet">Gourmet Experience</option>
-            </select>
+                <label for="people">Number of People:</label>
+                <input type="number" id="people" name="people" min="1" max="10" required>
 
-            <label for="people">Number of People:</label>
-            <input type="number" id="people" name="people" min="1" max="10" required>
-
-            <button type="submit">Reserve Now</button>
-        </form>
+                <button type="submit">Reserve Now</button>
+            </form>
+        </div>
+        </div>
     </section>
 
     <section class="contact-map">
